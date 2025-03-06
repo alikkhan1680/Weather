@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+
+body {
+  background: linear-gradient(45deg, 
+    rgba(255, 0, 0, 0.2),   /* qizil */
+    rgba(255, 165, 0, 0.2), /* to'q sariq */
+    rgba(255, 255, 0, 0.2), /* sariq */
+    rgba(0, 255, 0, 0.2),   /* yashil */
+    rgba(0, 0, 255, 0.2),   /* ko'k */
+    rgba(75, 0, 130, 0.2),  /* indigo */
+    rgba(238, 130, 238, 0.2) /* binafsha */
+  );
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_G{
+  width: 65%;
+  height: 400px;
+  margin: auto;
+}
+
+.img_G img{
+  width: 500px;
+  height:500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*informations class */
+.weather-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+}
+
+.latitude_img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/*input */
+.input{
+  display: flex;
+  justify-content: center;
+  margin: 40px 250px auto;
+}
+
+.input input{
+  font-size: 25px;
+  border-radius: 5px;
+
+}
